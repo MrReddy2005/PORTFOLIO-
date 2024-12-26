@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G. Puneeth Reddy - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        #header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar ul li a:hover {
+            color: #f4b400;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.5s ease-in-out;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .academic-details {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+
+        .details {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+
+        .certification-list {
+            list-style: none;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .certification-list li {
+            background-color: #fff;
+            margin: 10px;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-set {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skill {
+            width: 45%;
+        }
+
+        .skill h3 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .skill ul {
+            list-style: none;
+        }
+
+        .skill ul li {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Scroll animation delay */
+        #about { transition-delay: 0.2s; }
+        #academics { transition-delay: 0.4s; }
+        #certifications { transition-delay: 0.6s; }
+        #skills { transition-delay: 0.8s; }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div class="navbar">
+            <h1>G. Puneeth Reddy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I’m G. Puneeth Reddy, a B.Tech student at Visakha Institute of Engineering and Technology. I aspire to be a Full Stack Developer and have completed several certifications in Java, Data Analytics, and Data Science.</p>
+        </div>
+    </section>
+
+    <section id="academics">
+        <div class="container">
+            <h2>Academic Background</h2>
+            <div class="academic-details">
+                <div class="details">
+                    <h3>B.Tech in [Your Specialization]</h3>
+                    <p>Visakha Institute of Engineering and Technology</p>
+                    <p>CGPA: 8.32 (1st Semester), 8.10 (2nd Semester)</p>
+                    <p>Completed 3 Semesters; awaiting 3rd semester results.</p>
+                </div>
+                <div class="details">
+                    <h3>Intermediate (12th Grade)</h3>
+                    <p>Narayana Junior College</p>
+                    <p>Percentage: 93.7%</p>
+                </div>
+                <div class="details">
+                    <h3>10th Grade</h3>
+                    <p>Dr. K.K.R’s Gowtham Educational Institutional High School</p>
+                    <p>Percentage: 89%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul class="certification-list">
+                <li>Java – [Certification Provider]</li>
+                <li>Data Analytics – IBM (via edX)</li>
+                <li>Introduction to Data Science – IBM (via edX)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-set">
+                <div class="skill">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Java Programming</li>
+                        <li>Data Analytics & Data Science</li>
+                        <li>Frontend: HTML, CSS, JavaScript</li>
+                        <li>Backend Technologies (Learning)</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Effective Communication</li>
+                        <li>Drawing & Visual Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 G. Puneeth Reddy | Aspiring Full Stack Developer</p>
+    </footer>
+
+    <script>
+        // JavaScript for Scroll Animations
+        window.addEventListener("scroll", () => {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (sectionTop < windowHeight * 0.8) {
+                    section.classList.add("visible");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
